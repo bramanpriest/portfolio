@@ -1,44 +1,163 @@
-/*
-Error: Invalid CSS after "@": expected identifier, was "@media screen a..."
-        on line 163 of main.scss
+.hero {
+  font-family: Roboto, serif;
+  text-align: center;
+  min-height: 800px;
+  background-size: cover;
+  padding-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column; }
 
-158: .copyright {
-159:   margin-left: auto;
-160:   color: #00E2AC
-161: }
-162: 
-163: @@media screen and (max-width: 480px) {
-164:   #intro {
-165:     min-height: 640px;
-166:   }
-167: 
-168:   .left-col h2 {
+> .hero h1 {
+  line-height: 55px;
+  font-size: 72px; }
 
-Backtrace:
-main.scss:163
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1207:in `expected'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1137:in `expected'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:1132:in `tok!'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:194:in `directive'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:684:in `block_child'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:677:in `block_contents'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:125:in `stylesheet'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/scss/parser.rb:41:in `parse'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:406:in `_to_tree'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-/Users/vincentqzeppel/.rbenv/versions/2.3.3/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Invalid CSS after \"@\": expected identifier, was \"@media screen a...\"\A         on line 163 of main.scss\A \A 158: .copyright {\A 159:   margin-left: auto;\A 160:   color: #00E2AC\A 161: }\A 162: \A 163: @@media screen and (max-width: 480px) {\A 164:   #intro {\A 165:     min-height: 640px;\A 166:   }\A 167: \A 168:   .left-col h2 {"; }
+.hero h2 {
+  margin-top: 100px;
+  margin-bottom: 50px;
+  font-size: 40px;
+  line-height: 40px; }
+
+#intro h1 h5 {
+  text-shadow: 0px 5px 5px;
+  color: rgba(0, 0, 0, 0.25); }
+
+#intro h5 {
+  margin-bottom: 20px;
+  font-size: 24px;
+  font-weight: 700; }
+
+.landscape .hero {
+  color: white; }
+
+.cta {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 0;
+  width: 180px;
+  line-height: 50px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer; }
+
+.cta:hover {
+  background-color: #0CF; }
+
+#about {
+  min-height: 0px; }
+
+#about .left-col {
+  color: #00E2AC;
+  padding: 20px;
+  text-align: right;
+  text-transform: uppercase;
+  font-weight: 700; }
+
+#about .right-col {
+  text-align: left;
+  padding: 20px; }
+
+.left-col h2 {
+  margin-top: 0;
+  margin-bottom: 0;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 55px; }
+
+.right-col h5 {
+  font-size: 24px;
+  line-height: 30px; }
+
+#gallery {
+  background-color: #EEFDF9;
+  padding: 0px;
+  margin: 0px; }
+
+#gallery .col-md-4 {
+  overflow: hidden;
+  padding: 0px 5px 10px 5px; }
+
+.col-md-4 img {
+  height: 100%;
+  max-width: 390px;
+  max-height: 380px; }
+
+.hero.bridge {
+  background-image: url("../img/bridge/full-width.jpg");
+  width: 100%; }
+
+#contact p {
+  font-size: 24px;
+  margin-bottom: 40px;
+  max-width: 740px; }
+
+#social {
+  padding: 20px; }
+
+#social a {
+  margin-top: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  margin-left: 10px;
+  text-decoration: none; }
+
+#social img {
+  height: 20px; }
+
+#social img:hover {
+  opacity: 0.5; }
+
+#footer {
+  height: 40px;
+  margin-left: 10%;
+  margin-right: 10%;
+  padding-bottom: 150px;
+  display: flex;
+  flex-direction: row;
+  align-items: center; }
+
+#footer a {
+  color: black;
+  font-size: 16px;
+  line-height: 40px;
+  padding: 0;
+  margin-left: 5px;
+  margin-right: 20px; }
+
+#footer .footer-item {
+  flex: 1;
+  max-width: 100px; }
+
+.copyright {
+  margin-left: auto;
+  color: #00E2AC; }
+
+@media screen and (max-width: 480px) {
+  #intro {
+    min-height: 640px; }
+
+  .left-col h2 {
+    font-size: 42px;
+    line-height: 40px; }
+
+  #footer {
+    margin-left: 20px;
+    margin-right: 20px; }
+
+  #footer h4 {
+    padding-right: 20px; } }
+@media screen and (max-width: 992px) {
+  .row {
+    width: 100%; }
+
+  .col-md-4 {
+    width: 100%; }
+
+  .col-md-4 img {
+    width: 100%;
+    max-width: 992px;
+    max-height: 900px; } }
+
+/*# sourceMappingURL=main.css.map */

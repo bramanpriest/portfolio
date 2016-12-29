@@ -160,7 +160,7 @@
   color: #00E2AC
 }
 
-@@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px) {
   #intro {
     min-height: 640px;
   }
@@ -180,7 +180,7 @@
   }
 }
 
-@@media screen and (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .row {
     width: 100%;
   }
