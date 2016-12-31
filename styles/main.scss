@@ -8,7 +8,7 @@ $footer-a-color: black;
 
 
 .hero {
-  font-family: Roboto, serif;
+  font-family: "Roboto", serif;
   text-align: center;
   min-height: 800px;
   background-size: cover;
@@ -38,12 +38,12 @@ $footer-a-color: black;
 
 #intro {
   h1 {
+    color: rgba(0, 0, 0, .25);
     text-shadow: 0px 5px 5px;
-    color: $intro-h1-h5-color;
   }
   h5 {
+    color: rgba(0, 0, 0, .25);
     text-shadow: 0px 5px 5px;
-    color: $intro-h1-h5-color;
     margin-bottom: 20px;
     font-size: 24px;
     font-weight: 700;
@@ -52,7 +52,7 @@ $footer-a-color: black;
 
 .cta {
   background-color: black;
-  color: $color-white;
+  color: white;
   font-size: 18px;
   padding: 0;
   width: 180px;
@@ -61,7 +61,7 @@ $footer-a-color: black;
   border-radius: 4px;
   cursor: pointer;
   &:hover {
-    background-color: #0CF;
+    background-color: #00CFFF;
   }
 }
 /*.cta:hover {
@@ -80,7 +80,6 @@ $footer-a-color: black;
       margin-top: 0;
       margin-bottom: 0;
       font-size: 60px;
-      font-weight: 700;
       line-height: 55px;
     }
   }
@@ -96,9 +95,9 @@ $footer-a-color: black;
 }
 
 #gallery {
-  background-color: $gallery-bg-color;
-  padding: 0px;
-  margin: 0px;
+  background-color: #EEFDF9;
+  padding: 0px; /*not in CA project source-but in CSS build instructions*/
+  margin: 0px; /*not in CA project source-but in CSS build instructions*/
   .col-md-4 {
     overflow: hidden;
     padding: 0px 5px 10px 5px;
@@ -144,7 +143,7 @@ $footer-a-color: black;
   flex-direction: row;
   align-items: center;
   a {
-    color: $footer-a-color;
+    color: black;
     font-size: 16px;
     line-height: 40px;
     padding: 0;
@@ -157,7 +156,7 @@ $footer-a-color: black;
   }
 }
 
-#copyright {
+.copyright {
   margin-left: auto;
   color: #00E2AC
 }
